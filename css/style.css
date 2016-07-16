@@ -1,0 +1,330 @@
+@import url(reset.css);
+
+@font-face {
+	font-family: "PT_Sans_Narrow_Bold";
+	src: url(../fonts/PT_Sans_Narrow_Bold.ttf);
+	font-style: bold;
+}
+
+@font-face {
+	font-family: "PT_Sans_Narrow";
+	src: url(../fonts/PT_Sans_Narrow.ttf);
+	font-style: normal;
+}
+
+		/* Общие настройки */
+
+body {
+	font-family: "PT_Sans_Narrow_Bold", Arial, sans-serif;
+}
+
+a:link,
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+		/* Шапка */
+
+header {
+	background-color: black;
+	height: 70px;
+	width: 100%;
+}
+nav {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 28px 30px;
+}
+ul>li {
+	color: white;
+	text-transform: uppercase;
+	float: left;
+	margin-left: 30px;
+}
+nav>ul>li:hover {
+	padding-bottom: 22px;
+	border-bottom: 3px solid white;
+}
+
+.sign_up {
+	float: right;
+}
+
+#sign_up-up {
+	vertical-align: text-top;
+}
+.arrow {
+ 	margin-right: 12px;
+}
+
+		/* Основной контент */
+
+.wrapper {
+	width: 100%;
+	background: url(../images/background-image.jpg) center center;
+	background-size: cover;
+}
+.content {
+	max-width: 960px;
+	height: 100%;
+	margin: 0 auto;
+}
+.logo {
+	padding-top: 55px;
+	text-align: center;
+	margin-bottom: 75px;
+}
+ul>li {
+	color: white;
+	text-transform: uppercase;
+	float: left;
+}
+
+.advantages {
+	width: 100%;
+	height: 170px;
+}
+.li {
+	float: left;
+	width: 275px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+.li h1 {
+	font-size: 30px;
+}
+#diams {
+	display: block;
+	margin: 25px;
+	font-size: 45px;
+}
+
+		/* Блок новостей и фотографий */
+
+.news_and_photo {
+	width: 100%;
+	height: 430px;
+	margin-top: 80px;
+	background: url(../images/bg_news.jpg) repeat repeat;
+}
+.news,
+.contact_info {
+	width: 335px;
+	height: 320px;
+	color: #000000;
+	padding: 55px 80px;
+	float: left;
+}
+.news * {
+	color: #000000;
+	font-size: 14px;
+	line-height: 24px;
+}
+.news h1,
+.contact_info,
+.registration {
+	font-size: 30px;
+	padding-left: 30px;
+	text-transform: uppercase;
+}
+.news li {
+	padding-top: 40px;
+}
+
+.news li:last-child {
+	padding-top: 20px;
+}
+.news .date {
+	text-transform: lowercase;
+	font-family: "PT_Sans_Narrow";
+}
+.all_news {
+	color: white;
+	text-transform: uppercase;
+	padding: 6px 25px;
+	float: left;
+	background-color: black;
+	width: 90px;
+	margin-top: 32px;
+	text-align: center;
+	margin-left: 30px;
+}
+.vertical_line {
+	background: url(../images/vertical-line.png) center center;
+	width: 6px;
+	height: 254px;
+	float: left;
+	margin-top: 90px;
+}
+.photo {
+	width: 459px;
+	height: 430px;
+	color: #000000;
+	float: left;
+}
+.photo_block {
+	width: 299px;
+	height: 320px;
+	color: #000000;
+	padding: 55px 80px;
+	float: left;
+}
+.photo h1 {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.gallery {
+	width: 285px;
+	height: 165px;
+	background: url(../images/gallery/photo1.jpg) no-repeat no-repeat;
+	border: 7px white solid;
+	margin-top: 40px;
+}
+.next,
+.back {
+	background-color: black;
+	color: white;
+	font-family: inherit;
+	text-transform: uppercase;
+	float: left;
+	width: 139px;
+	height: 38px;
+	margin-top: 34px;
+	margin-right: 20px;
+	border: none;
+}
+.back {
+	margin-right: 20px;
+}
+.next {
+	margin-right: 0px;
+}
+
+		/* Контактная информация */
+
+.contact_and_registration {
+	width: 100%;
+	height: 430px;
+	margin-top: 35px;
+	background: url(../images/bg_news.jpg) repeat repeat;
+}
+.contact_info {
+	padding: 55px 80px;
+}
+.contact_info h1 {
+	margin-left: 30px;
+	width: 321px;
+	margin-bottom: 40px;
+	float: left;
+}
+.contact_info p {
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	margin-left: 30px;
+}
+.how_can_I_get_to,
+.feedback {
+	background-color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 139px;
+    text-align: center;
+    padding: 15px 25px;
+    margin-left: 30px;
+}
+.registration {
+	padding: 55px 80px;
+	float: left;
+	width: 299px;
+	height: 320px;
+}
+.reg_form h1 {
+	margin-bottom: 40px;
+}
+.reg_form p {
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	margin-bottom: 26px;
+}
+.text_area {
+	background: url(../images/bg_news.jpg) repeat repeat;
+	font-family: inherit;
+	text-transform: uppercase;
+	border: 2px solid black;
+	float: left;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 15px;
+	margin-right: 20px;
+	margin-bottom: 15px;
+	width: 119px;
+}
+.text_area:nth-child(2),
+.text_area:nth-child(4) {
+	margin-right: 0px;
+}
+.send {
+	background-color: black;
+	color: white;
+	font-family: inherit;
+	text-transform: uppercase;
+	border: none;
+	text-align: center;
+	width: 100%;
+	padding: 14px;
+	margin-top: 35px;
+}
+
+		/* Footer */
+
+footer {
+	margin-top: 60px;
+	width: 100%;
+	height: 180px;
+	background: url(../images/bg_footer.jpg) repeat repeat;
+}
+.footer_menu {
+	max-width: 960px;
+	margin: 0 auto;
+	color: white;
+}
+.info_adress {
+	float: left;
+	width: 350px;
+	padding-top: 60px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+.how_find {
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+.social {
+	float: left;
+	width: 350px;
+	padding-top: 60px;
+	line-height: 24px;
+	padding-left: 80px;
+}
+.social p {
+	padding-left: 15px;
+}
+.social ul li {
+	margin-left: 6px;
+	margin-top: 20px;
+}
+.designed {
+	width: 140px;
+	float: right;
+	padding-top: 60px;
+	line-height: 24px;
+}
+.designed p {
+	margin-bottom: 20px;
+}

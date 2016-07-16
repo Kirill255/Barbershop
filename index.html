@@ -3,26 +3,26 @@
   	<head>
 		<meta charset="utf-8">
 		<title> Barbershop BORODINSKI </title>
+		<link rel="stylesheet" href="css/reset.css">
 		<link href="css/style.css" rel="stylesheet">
   	</head>
    	<body>
 
 	   	<header>
 	   		<nav>
-		   		<ul>
+		   		<ul class="nav_list">
 		   			<li><a href="#"> Информация </a></li>
 		   			<li><a href="#"> Новости </a></li>
 		   			<li><a href="#"> Прайс-лист </a></li>
 		   			<li><a href="#"> Магазин </a></li>
 		   			<li><a href="#"> Контакты </a></li>
 		   		</ul>
-		   		<div class="sign_up">
+		   		<div class="user_block">
 		   			<a href="#"><img class="arrow" src="images/log-in-arrow.png" alt="">
-		   			<span id="sign_up-up">Вход</span> </a>
+		   			<span id="log_in">Вход</span></a>
 		   		</div>
 		   	</nav>
 	   	</header>
-
 
 	   	<div class="wrapper">
 
@@ -32,22 +32,22 @@
 		   		</div>
 		   		<div class="advantages"> 
 		   			<ul>
-			   			<li class="li"> <h1> Быстро </h1> 
+			   			<li class="advantages_list"> <h1> Быстро </h1> 
 			   			<span id="diams">&#9830</span> 
 			   			<p> Мы делаем свою работу быстро! Два часа <br> пролетят незаметно и вы - счастливый <br> обладатель стильной стрижки-минутки! </p>
 			   				</li>
-						<li class="li"> <h1> Круто </h1> 
+						<li class="advantages_list"> <h1> Круто </h1> 
 			   			<span id="diams">&#9830</span> 
 			   			<p> Забудьте, как вы стриглись раньше.<br> Мы сделаем из вас звезду футбола или кино!<br> Во всяком случае внешне. </p>
 			   				</li>
-			   			<li class="li"> <h1> Дорого </h1> 
+			   			<li class="advantages_list"> <h1> Дорого </h1> 
 			   			<span id="diams">&#9830</span> 
 			   			<p> Наши мастера - профессионалы своего дела и <br> не могут стоить дешево. К тому же, разве цена <br> не дает определенный статус? </p>
 			   				</li>	
 		   			</ul>
 		   		</div>
 		   		
-				<div class="news_and_photo">
+				<section class="news_and_photo">
 					<div class="news">
 						<h1> Новости </h1>
 							<ul>
@@ -68,12 +68,13 @@
 						<div class="photo_block">
 							<h1> Фотогалерея </h1>
 							<div class="gallery"> </div>
-								<p><button class="back"> Назад </button></p>
-								<p><button class="next"> Вперед </button></p>
+								<p><button class="button back"> НАЗАД </button></p>
+								<p><button class="button next"> ВПЕРЕД </button></p>
 						</div>
 					</div>
-				</div>
-				<div class="contact_and_registration">
+				</section>
+
+				<section class="contact_and_registration">
 					<div class="contact_info">
 						<h1> Контактная информация </h1>
 						<p> Барбершоп &#171Бородинский&#187 <br>
@@ -92,16 +93,18 @@
 							<p> Укажите желаемую дату и время и мы свяжемся <br>
 							с вами для подтверждения брони </p>
 							<form action="#">
-								<input class="text_area" type="text" value="Дата">
-								<input class="text_area" type="text" value="Время">
-								<input class="text_area" type="text" value="Ваше имя">
-								<input class="text_area" type="text" value="Телефон">
-								<button class="send"> Отправить </button>
+								<input class="text_area" type="text" placeholder="ДАТА">
+								<input class="text_area" type="text" placeholder="ВРЕМЯ">
+								<input class="text_area" type="text" placeholder="ВАШЕ ИМЯ">
+								<input class="text_area" type="text" placeholder="ТЕЛЕФОН">
+								<button class="button send"> Отправить </button>
 							</form>
 						</div>
 					</div>
-				</div>
+				</section>
+
 			</div>
+
 			<footer>
 				<div class="footer_menu">
 					<div class="info_adress">
@@ -124,6 +127,7 @@
 					</div>
 				</div>
 			</footer>
+
 		</div>   		
 	</body>
 </html>

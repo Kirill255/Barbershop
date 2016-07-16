@@ -61,8 +61,7 @@ nav {
 
 .wrapper {
 	width: 100%;
-	background: url(../images/background-image.jpg) no-repeat center top;
-	background-size: cover;
+	background: #000000 url(../images/background-image.jpg) no-repeat center top;
 }
 .content {
 	max-width: 960px;

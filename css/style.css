@@ -1,7 +1,7 @@
 /*---------------------------
 		Общие
 		параметры
----------------------------*/
+--------------------------*/
 
 body {
 	min-width: 960px;
@@ -30,11 +30,7 @@ body {
 }
 
 a {
-<<<<<<< HEAD
-	color: white;
-=======
 	color: #ffffff;
->>>>>>> refs/remotes/origin/master
 	text-decoration: none;
 }
 
@@ -45,24 +41,6 @@ a {
 ---------------------------*/
 
 .main_header {
-<<<<<<< HEAD
-	background: black;
-	margin-bottom: 60px;
-}
-
-.main_navigation {
-	max-width: 790px;
-}
-
-.nav_list {
-	float: left;
-	
-	list-style: none;
-	margin: 0;
-	padding: 0;
-
-	/* margin-right: 55px; зачем он здесь? */
-=======
 	background: #000000;
 	margin-bottom: 60px;
 }
@@ -70,7 +48,6 @@ a {
 .main_navigation {
 	float: left;
 	max-width: 790px;
->>>>>>> refs/remotes/origin/master
 }
 
 .nav_list-item {
@@ -79,11 +56,8 @@ a {
 	
 	font-size: 16px;
 	line-height: 20px;
-<<<<<<< HEAD
-=======
 
 	list-style: none;
->>>>>>> refs/remotes/origin/master
 }
 
 .nav_list-item a {
@@ -143,7 +117,6 @@ a {
 	height: 152px;
 	margin: 0 auto;
 	margin-bottom: 50px;
-<<<<<<< HEAD
 }
 
 .logo img {
@@ -153,23 +126,6 @@ a {
 
 .features {
 	margin-bottom: 80px;
-}
-
-.features_list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-=======
-}
-
-.logo img {
-	width: 368px;
-	height: 152px;
-}
-
-.features {
-	margin-bottom: 80px;
->>>>>>> refs/remotes/origin/master
 }
 
 .features_list-item {
@@ -181,18 +137,6 @@ a {
 	text-align: center;
 	font-size: 14px;
 	line-height: 24px;
-<<<<<<< HEAD
-}
-
-.features_list-item p {
-	padding: 0;
-	margin: 0;
-}
-
-.features_head {
-	position: relative;
-
-=======
 
 	list-style: none;
 }
@@ -201,7 +145,6 @@ a {
 .features_head {
 	position: relative;
 
->>>>>>> refs/remotes/origin/master
 	display: block;
 	padding-bottom: 45px;
     margin-bottom: 30px;
@@ -217,17 +160,10 @@ a {
 	display: block;
 	width: 20px;
 	height: 20px;
-<<<<<<< HEAD
-	background-color: white;
-
-	bottom: 0;
-	left: 47%;
-=======
 	background-color: #ffffff;
 
 	bottom: 0;
 	left: 50%;
 	margin-left: -10px;
->>>>>>> refs/remotes/origin/master
 	transform: rotate(45deg);
 }

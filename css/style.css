@@ -30,7 +30,7 @@ body {
 }
 
 a {
-	color: white;
+	color: #ffffff;
 	text-decoration: none;
 }
 
@@ -41,22 +41,13 @@ a {
 ---------------------------*/
 
 .main_header {
-	background: black;
+	background: #000000;
 	margin-bottom: 60px;
 }
 
 .main_navigation {
-	max-width: 790px;
-}
-
-.nav_list {
 	float: left;
-	
-	list-style: none;
-	margin: 0;
-	padding: 0;
-
-	/* margin-right: 55px; зачем он здесь? */
+	max-width: 790px;
 }
 
 .nav_list-item {
@@ -65,6 +56,8 @@ a {
 	
 	font-size: 16px;
 	line-height: 20px;
+
+	list-style: none;
 }
 
 .nav_list-item a {
@@ -135,12 +128,6 @@ a {
 	margin-bottom: 80px;
 }
 
-.features_list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
 .features_list-item {
 	display: inline-block;
 
@@ -150,12 +137,10 @@ a {
 	text-align: center;
 	font-size: 14px;
 	line-height: 24px;
+
+	list-style: none;
 }
 
-.features_list-item p {
-	padding: 0;
-	margin: 0;
-}
 
 .features_head {
 	position: relative;
@@ -175,9 +160,10 @@ a {
 	display: block;
 	width: 20px;
 	height: 20px;
-	background-color: white;
+	background-color: #ffffff;
 
 	bottom: 0;
-	left: 47%;
+	left: 50%;
+	margin-left: -10px;
 	transform: rotate(45deg);
 }

@@ -204,9 +204,10 @@ a {
  }
 
 .gallery_images_slide {
-     border: 5px solid #ffffff;
-     width: 295px;
-     margin-bottom: 35px;
+    border: 5px solid #ffffff;
+    width: 295px;
+    height: 159px;
+    background-color: #c0c0c0;
  }
 
 /*---------------------------
@@ -239,18 +240,36 @@ a {
      background-color: #663d15;
  }
 
+.prev, .next {
+    width: 140px;
+    position: absolute;
+}
+
  .prev {
- 	margin-right: 20px;
+ 	bottom: 0;
+ 	left: 0;
  }
 
- .prev, .next {
- 	width: 140px;
- }
+.next {
+	bottom: 0;
+	right: 0;
+}
 
 .main_content-gallery {
     float: right;
+    position: relative;
+    height: 320px;
+}
+
+.main_info-contacts {
+    float: left;
 }
 
 .main_info-form {
+    width: 300px;
     float: right;
+}
+
+.main_info-form input {
+    display: inline-block;
 }

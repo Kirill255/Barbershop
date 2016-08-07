@@ -46,7 +46,7 @@ a {
 
 .main_navigation {
     float: left;
-    max-width: 790px;
+    width: 790px;
 }
 
 .nav_list-item {
@@ -90,7 +90,7 @@ a {
     left: 5px;
 
     background: transparent url("../image/sprite.png")
-                no-repeat -426px -9px;
+    no-repeat -469px -10px;
     width: 18px;
     height: 16px;
     opacity: 0.3;
@@ -104,6 +104,52 @@ a {
 .nav_list-item a:hover {
     background-color: #242424;
 }
+
+/*---------------------------
+    Header for price-list page
+---------------------------*/
+
+.price-list .main_header {
+    margin-bottom: 0;
+}
+
+.logo-inner {
+    float: left;
+    width: 111px;
+    height: 24px;
+    padding-top: 22px;
+}
+
+.main_navigation .active span {
+    display: block;
+
+    padding: 25px 20px;
+}
+
+.main_navigation .active {
+    position: relative;
+}
+
+.main_navigation .active::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    left: 20px;
+    bottom: 0;
+
+    height: 5px;
+    background-color: #ffffff;
+}
+
+.main_navigation .active a:hover {
+    background: none;
+}
+
+/*---------------------------
+    Header for price-list page
+---------------------------*/
+
+
 
 /*---------------------------
 
@@ -223,6 +269,90 @@ a {
  }
 
 /*---------------------------
+    Main content for price-list page
+---------------------------*/
+
+.price-list_page {
+    background: url("../image/main_content-bg.jpg") repeat;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.price-list_page a {
+    color: #000000;
+
+}
+
+.price-list_page h1 {
+    padding-top: 55px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.price-list_nav {
+    list-style: none;
+}
+
+.price-list_nav-item {
+    display: inline-block;
+    padding-right: 25px;
+    margin-right: 10px;
+    color: #cfccca;
+}
+
+.price-list_nav-item a {
+    position: relative;
+}
+
+.price-list_nav-item a::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    transform: rotate(45deg);
+    right: -25px;
+    top: 5px;
+}
+
+.big_heading {
+    margin-top: 55px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.big_heading h2 {
+    position: relative;
+
+    display: inline;
+    padding: 0 25px;
+    background: #f7f4f1 url("../image/main_content-bg.jpg")
+                repeat;
+
+    font-size: 48px;
+    line-height: 48px;
+
+    z-index: 2;
+}
+
+.big_heading::after {
+    content: "";
+    position: relative;
+    top: -25px;
+
+    display: block;
+    border-bottom: 2px solid #000000;
+
+    z-index: 1;
+}
+
+/*---------------------------
+    Main content for price-list page
+---------------------------*/
+
+
+/*---------------------------
 
 		BUTTONS
 
@@ -309,7 +439,7 @@ a {
 }
 
 .main_info-form input:nth-child(even) {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .submit {
@@ -354,6 +484,10 @@ footer {
      text-decoration: underline;
  }
 
+.how_find_us:hover {
+    text-decoration: none;
+}
+
 .footer_social h3,
 .footer_developer h3 {
     text-align: center;
@@ -368,11 +502,16 @@ footer {
 
  .social_link {
      display: inline-block;
+     vertical-align: top;
      width: 45px;
      height: 45px;
      margin-right: 5px;
 
      background: url("../image/sprite.png") no-repeat center;
+     transition:
+        background-position 0.5s,
+        background-color 0.5s;
+     
  }
 
  .social-vk {
@@ -393,7 +532,7 @@ footer {
 
 .social-inst {
     background-position: -179px -9px;
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .social-inst:hover {

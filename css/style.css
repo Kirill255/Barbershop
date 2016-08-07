@@ -110,7 +110,7 @@ a {
 ---------------------------*/
 
 .price-list .main_header {
-    margin-bottom: 0;
+    color: #ffffff;
 }
 
 .logo-inner {
@@ -271,41 +271,44 @@ a {
 /*---------------------------
     Main content for price-list page
 ---------------------------*/
-
-.price-list_page {
+body.price-list {
     background: url("../image/main_content-bg.jpg") repeat;
     color: #000000;
     text-transform: uppercase;
 }
 
-.price-list_page a {
+.breadcrumbs a {
     color: #000000;
+}
 
+.breadcrumbs a:hover {
+    text-decoration: underline;
 }
 
 .price-list_page h1 {
-    padding-top: 55px;
     margin-bottom: 30px;
     font-size: 30px;
-    line-height: 1.3;
+    line-height: 42px;
 }
 
-.price-list_nav {
+.breadcrumbs {
     list-style: none;
 }
 
-.price-list_nav-item {
-    display: inline-block;
-    padding-right: 25px;
-    margin-right: 10px;
+.breadcrumbs li {
+    display: inline;
+    padding-right: 40px;
+}
+
+.current {
     color: #cfccca;
 }
 
-.price-list_nav-item a {
+.breadcrumbs li a {
     position: relative;
 }
 
-.price-list_nav-item a::after {
+.breadcrumbs li a::after {
     content: "";
     position: absolute;
     width: 8px;
@@ -346,6 +349,69 @@ a {
 
     z-index: 1;
 }
+
+.best_means {
+    float: left;
+    width: 240px;
+    margin-bottom: 65px;
+}
+
+.barbershop_price {
+    width: 460px;
+    float: right;
+}
+
+.best_means-list li {
+    display: block;
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.best_means-list-item::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 3px;
+
+    height: 8px;
+    width: 8px;
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+.best_means-list h2,
+.about_us h3,
+.barbershop_price h2 {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 35px;
+}
+
+.barbershop_price table {
+    border-collapse: collapse;
+}
+
+.barbershop_price-table {
+    width: 100%;
+}
+
+.barbershop_price-table td {
+    width: 50%;
+    padding: 10px 15px;
+    border: 2px solid #000000;
+}
+
+.barbershop_price-table td:last-child {
+    text-align: center;
+}
+
+.about_us {
+    float: left;
+    width: 400px;
+}
+
 
 /*---------------------------
     Main content for price-list page

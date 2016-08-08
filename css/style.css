@@ -246,6 +246,14 @@ a {
     margin-bottom: 30px;
 }
 
+.phone_number {
+    color: #000000;
+}
+
+.phone_number:hover {
+    text-decoration: underline;
+}
+
 .main_content-list-item p,
 .main_info-contacts p,
 .main_info-form p {
@@ -353,7 +361,6 @@ body.price-list {
 .best_means {
     float: left;
     width: 240px;
-    margin-bottom: 65px;
 }
 
 .barbershop_price {
@@ -391,6 +398,7 @@ body.price-list {
 
 .barbershop_price table {
     border-collapse: collapse;
+    margin-bottom: 111px;
 }
 
 .barbershop_price-table {
@@ -407,9 +415,34 @@ body.price-list {
     text-align: center;
 }
 
-.about_us {
+.inner_columns {
+    margin: 60px 0;
+}
+
+.inner_column-left,
+.inner_column-right {
+    width: 460px;
+}
+
+.inner_column-left {
     float: left;
-    width: 400px;
+}
+
+.inner_column-right {
+    float: right;
+}
+
+.about_us {
+    width: 390px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 50px;
+}
+
+.location {
+    width: 380px;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 

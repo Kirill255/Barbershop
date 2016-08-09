@@ -246,8 +246,12 @@ a {
     margin-bottom: 30px;
 }
 
-.phone_number {
+.main_info-contacts .phone_number {
     color: #000000;
+}
+
+.how_find_us .phone_number {
+    color: #ffffff;
 }
 
 .phone_number:hover {

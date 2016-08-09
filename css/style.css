@@ -264,9 +264,7 @@ a {
 
  .main_content-list-item time {
      text-transform: lowercase;
-
-     /* дописать сюда шрифт */
-
+     font-weight: 300;
  }
 
 .gallery_images_slide {
@@ -388,7 +386,7 @@ body.price-list {
     transform: rotate(45deg);
 }
 
-.best_means-list h2,
+.best_means h2,
 .about_us h3,
 .barbershop_price h2 {
     font-size: 24px;

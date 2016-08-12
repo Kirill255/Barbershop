@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title> Barbershop Price </title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic'
           rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="price-list">
-    <header class="main_header">
+
+<header class="main_header">
         <div class="wrap clearfix">
             <nav class="main_navigation">
                 <a href="index.html" class="logo-inner"><img src="image/logo-inner.png" alt=""></a>
@@ -26,7 +28,8 @@
             </div>
         </div>
     </header>
-    <main class="price-list_page clearfix">
+
+<main class="price-list_page clearfix">
         <div class="wrap">
             <h1> Прайс-лист </h1>
             <nav>
@@ -97,7 +100,7 @@
         </div>
     </main>
 
-    <footer>
+<footer>
         <div class="wrap clearfix">
             <section class="footer_adress">
                 <p>
@@ -121,5 +124,25 @@
             </section>
         </div>
     </footer>
+
+<div class="modal_content">
+    <button class="modal_content-close" type="button" title="Закрыть"> Закрыть </button>
+    <h2 class="modal_content-title"> Личный кабинет </h2>
+    <p> Введите свой логин и пароль </p>
+    <form class="login_form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="icon_user" type="text" name="login" placeholder="Логин">
+        <input class="icon_password" type="password" name="password" placeholder="Пароль">
+        <label class="login_checkbox">
+            <input type="checkbox" name="remember">
+            <span class="checkbox_indicator"></span>
+            Запомните меня
+        </label>
+        <a class="restore"  href="#"> Я забыл пароль! </a>
+        <button class="btn" type="submit"> Войти </button>
+    </form>
+</div>
+
+<script src="js/popup.js"></script>
+
 </body>
 </html>

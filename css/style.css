@@ -11,7 +11,7 @@ body {
     line-height: 1.3;
     font-weight: 700;
     text-transform: uppercase;
-    color: white;
+    color: #ffffff;
 
     background: #000000 url("../image/background-image.jpg") no-repeat center top;
 }
@@ -148,7 +148,6 @@ a {
 /*---------------------------
     Header for price-list page
 ---------------------------*/
-
 
 
 /*---------------------------
@@ -381,7 +380,7 @@ body.price-list {
 .best_means-list-item::after {
     content: "";
     position: absolute;
-    left: 0px;
+    left: 0;
     top: 3px;
 
     height: 8px;
@@ -651,4 +650,177 @@ footer {
 
 .developer_link:hover {
     background-position: -198px -57px;
+}
+
+
+/*---------------------------
+
+           Login form
+
+-----------------------------*/
+
+.modal_content {
+    display: none;
+
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    margin-left: -230px;
+
+    width: 300px;
+    padding: 50px 80px;
+
+    color: #000000;
+
+    background: #f7f4f1 url("../image/main_content-bg.jpg") repeat;
+
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+    z-index: 3;
+}
+
+.modal_content-show {
+    display: block;
+}
+
+.modal_content-close {
+    position: absolute;
+    top: 0;
+    right: -34px;
+
+    background-color: transparent;
+
+    width: 22px;
+    height: 22px;
+
+    font-size: 0;
+
+    cursor: pointer;
+}
+
+.modal_content-close::before,
+.modal_content-close::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+
+    width: 19px;
+    height: 3px;
+
+    background-color: #d0d0d0;
+    border-radius: 1px;
+}
+
+.modal_content-close::before {
+    transform: rotate(45deg);
+}
+
+.modal_content-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal_content h2 {
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.modal_content p {
+    margin-bottom: 14px;
+}
+
+.modal_content .login_form {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.login_form input[type="text"],
+.login_form input[type="password"] {
+    width: 236px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    padding-right: 40px;
+
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+    outline: none;
+}
+
+.login_form input:focus {
+    border-color: #663d15;
+}
+
+.login_form input.icon_user {
+    background: url("../image/sprite.png") no-repeat -105% -100px;
+}
+
+.login_form input.icon_password {
+    background: url("../image/sprite.png") no-repeat -105% -133px;
+    margin-bottom: 15px;
+}
+
+.login_form .btn {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.login_form .restore {
+    float: right;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.login_checkbox {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.login_checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.login_checkbox input[type="checkbox"] +
+.checkbox_indicator {
+    position: absolute;
+    top: -3px;
+    left: 0;
+
+    width: 17px;
+    height: 17px;
+
+    border: 2px solid #000000;
+}
+
+.login_checkbox input[type="checkbox"]:checked +
+.checkbox_indicator::before,
+.login_checkbox input[type="checkbox"]:checked +
+.checkbox_indicator::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 1px;
+
+    width: 15px;
+    height: 2px;
+
+    background-color: #000000;
+}
+
+.login_checkbox input[type="checkbox"]:checked +
+.checkbox_indicator::before {
+    transform: rotate(45deg);
+}
+
+.login_checkbox input[type="checkbox"]:checked +
+.checkbox_indicator::after {
+    transform: rotate(-45deg);
 }

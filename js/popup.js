@@ -74,11 +74,12 @@ window.addEventListener("keydown", function (event) {
         }
     }});
         // Закрытие окна авторизации или карты при клике по оверлею
-overlay.addEventListener("click", function (event) {
+overlay.addEventListener("click", function () {
     if (popup.classList.contains("modal_content-show")) {
         popup.classList.remove("modal_content-show");
         overlay.classList.remove("overlay-show");
-    } if (popupMap.classList.contains("modal_content-map-show")) {
+        popup.classList.remove("error");}
+    if (popupMap.classList.contains("modal_content-map-show")) {
         popupMap.classList.remove("modal_content-map-show");
         overlay.classList.remove("overlay-show");
     }

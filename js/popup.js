@@ -14,7 +14,7 @@ var loginEnter = document.querySelector(".login"),
 
     popupMapLink = document.querySelector(".way"),
     popupMap = document.querySelector(".modal_content-map"),
-    popupMapClose = popupMap.querySelector(".modal_content-close");
+    popupMapClose = document.querySelector(".modal_content-close-map");
 
         // Открытие окна авторизации пользователя
     loginEnter.addEventListener("click", function (event) {
@@ -73,6 +73,7 @@ window.addEventListener("keydown", function (event) {
             overlay.classList.remove("overlay-show");
         }
     }});
+
         // Закрытие окна авторизации или карты при клике по оверлею
 overlay.addEventListener("click", function () {
     if (popup.classList.contains("modal_content-show")) {

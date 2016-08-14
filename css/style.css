@@ -33,6 +33,7 @@ a {
     text-decoration: none;
 }
 
+
 /*--------------------------
 
 		HEADER
@@ -104,6 +105,7 @@ a {
 .nav_list-item a:hover {
     background-color: #242424;
 }
+
 
 /*---------------------------
     Header for price-list page
@@ -277,9 +279,11 @@ a {
     background-color: #c0c0c0;
  }
 
+
 /*---------------------------
     Main content for price-list page
 ---------------------------*/
+
 body.price-list {
     background: url("../image/main_content-bg.jpg") repeat;
     color: #000000;
@@ -547,6 +551,7 @@ body.price-list {
     margin-top: 20px;
 }
 
+
 /*---------------------------
 
 		FOOTER
@@ -678,8 +683,27 @@ footer {
     z-index: 4;
 }
 
+@keyframes bounce  {
+    0% { transform: translateY(-2000px);}
+    70% { transform: translateY(30px);}
+    90% { transform: translateY(-10px);}
+    90% { transform: translateY(-10px);}
+    100% { transform: translateY(0);}
+}
+
 .modal_content-show {
     display: block;
+    animation: bounce 0.6s;
+}
+
+@keyframes shake {
+    0%, 100%                { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80%      { transform: translateX(10px); }
+}
+
+.error {
+    animation: shake 0.6s;
 }
 
 .modal_content-close {
@@ -825,7 +849,6 @@ footer {
     transform: rotate(-45deg);
 }
 
-
 .overlay {
     display: none;
     position: fixed;
@@ -841,5 +864,26 @@ footer {
 }
 
 .overlay-show {
+    display: block;
+}
+
+.modal_content-map {
+    display: none;
+
+    background-image: url("../image/google-map.jpg");
+    width: 767px;
+    height: 557px;
+
+    border: 7px solid #ffffff;
+
+    position: fixed;
+    top: 50px;
+    left: 300px;
+    margin: 0 auto;
+
+    z-index: 4;
+}
+
+.modal_content-map-show {
     display: block;
 }

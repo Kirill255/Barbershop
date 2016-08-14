@@ -1,5 +1,4 @@
 
-
 var loginEnter = document.querySelector(".login"),
 
     popup = document.querySelector(".modal_content"),
@@ -74,7 +73,6 @@ window.addEventListener("keydown", function (event) {
             overlay.classList.remove("overlay-show");
         }
     }});
-
         // Закрытие окна авторизации или карты при клике по оверлею
 overlay.addEventListener("click", function (event) {
     if (popup.classList.contains("modal_content-show")) {
